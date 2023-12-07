@@ -5,7 +5,7 @@ import '@/styles/globals.css'
 export default function App({ Component, pageProps }) {
   return (
     <motion.div
-      className='w-[40rem]   min-h-screen bg-white text-black mx-auto flex flex-col justify-between items-center'
+      className='w-screen max-w-[900px] min-h-screen bg-white text-black mx-auto flex flex-col justify-between items-center'
 
     >
       <Header />

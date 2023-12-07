@@ -55,36 +55,36 @@ const Profile = () => {
   return ( 
     <>
       <motion.div
-        className="w-full h-full mt-[9rem] bg-[url('/images/background-orange.svg')] bg-cover flex flex-col justify-start items-center rounded-tl-[3rem] rounded-tr-[3rem] text-white relative"
+        className="w-full h-full mt-[6rem] ml-3 mr-3 bg-[url('/images/background-orange.svg')] bg-cover flex flex-col justify-start items-center rounded-tl-[3rem] rounded-tr-[3rem] text-white relative"
       >
         <button
           className='absolute top-4 right-1 m-4'
           onClick={logoff} 
         >
-          <MdExitToApp  className='w-16 h-16'/>
+          <MdExitToApp  className='w-8 h-8'/>
         </button>
-        <h2 className='text-6xl py-10'>Profile</h2>
+        <h2 className='text-3xl py-5'>Profile</h2>
         <div className='flex flex-col justify-start items-center'>
-          <p className='text-3xl mb-2'>Name: George Cheng</p>
-          <p className='text-2xl'>Email: george.cheng@edu.sait.ca</p>
+          <p className='text-xl mb-1'>Name: George Cheng</p>
+          <p className='text-xl'>Email: george.cheng@edu.sait.ca</p>
         </div>
         <motion.div
-          className='w-full flex flex-col justify-center items-center'
+          className='w-full flex flex-col p-2 justify-center items-center'
         >
-          <h3 className='text-3xl m-[2rem]'>Subscriptions</h3>
+          <h3 className='text-2xl m-[1rem]'>Subscriptions</h3>
           <motion.div
-            className=' grid grid-cols-2 gap-4 mx-auto'
+            className=' grid grid-cols-2 gap-2 mx-auto'
           >
             {selectedCategories.map((category, index) => (
               // <div className='tooltip tooltip-open tooltip-bottom' data-tip={category.subcategories}>
                 <button
                   key={index}
-                  className={`${category.selected ? "bg-p1" : "bg-white"} ${category.selected ? "text-white" : "text-black"}   p-2 m-2  flex flex-col justify-center items-center rounded-lg`}
+                  className={`${category.selected ? "bg-p1" : "bg-white"} ${category.selected ? "text-white" : "text-black"}  min-h-[7rem] p-2 m-2  flex flex-col justify-center items-center rounded-lg`}
                   onClick={() => {selected(index)}}
                 >
                   <img src={`/images/${category.icon}`} alt="SAIT logo" className='w-[3rem]' />
-                  <i className={`${category.icon} text-6xl {category.color}`}></i>
-                  <p className='text-xl'>{category.name}</p>
+                  <i className={`${category.icon} text-2xl {category.color}`}></i>
+                  <p className='text-lg'>{category.name}</p>
                 </button>
               // </div>
             ))}

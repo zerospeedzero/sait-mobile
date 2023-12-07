@@ -108,29 +108,28 @@ const Categories = () => {
   return (
     <motion.div
       id="top"
-      className="w-full h-full min-h-screen bg-transparent p-4 flex flex-col justify-start items-center"
+      className="w-full h-full min-h-screen bg-transparent p-2 flex flex-col justify-start items-center"
     >
       <motion.div
-        className='w-full flex flex-row justify-start items-center mt-[4rem]'
+        className='w-full flex flex-row justify-start items-center mt-[2rem]'
         onClick={()=>{filler('all')}}
       >
         <motion.img src="/images/Note-1.png" alt="SAIT logo" className='w-[5rem]'/>
         <h3 className='text-lg font-bold'>All Events</h3>
       </motion.div>
       <motion.div
-        className='h-1/2 w-full p-2 m-2 '
+        className='w-full p-2 m-2 '
       >
         <h3 className='text-lg font-bold mb-2 ml-2'>By Categories</h3>
         <motion.div
-          className='max-w-full grid grid-cols-4 gap-4'
+          className='max-w-full grid grid-cols-4 gap-1 md:gap-4'
         >
           {categories.filter(category => (category.id != 'all' && (profileSettings.includes(category.id) || profileSettings.length==0))).map((category, index) => (
             <button
               key={index}
-              className={`min-w-[4rem] min-h-[4rem] p-2 m-2 flex flex-col justify-center items-center rounded-lg shadow-lg hover:scale-110 hover:bg-p1/20 duration-200`}
+              className={`min-w-[4rem] min-h-[4rem] p-2 m-1 flex flex-col justify-center items-center rounded-lg shadow-lg hover:scale-110 hover:bg-p1/20 duration-200`}
               onClick={() => {filler(category.id)}}
             >
-              {/* <i className={`${category.icon} text-6xl ${category.color}`}></i> */}
               <img src={`/images/${category.icon}`}  alt={category.name}/>
               <p className='text-sm font-semibold'>{category.name}</p>
             </button>
@@ -166,11 +165,6 @@ const Categories = () => {
                 <p className='mr-6'>{event.date}</p>
                 <p className=''>{event.time}</p>
               </div>
-              {/* <button className='p-2 bg-gray-300'
-                onClick={() => {window.open(event.link)}}
-              >
-                Details
-              </button> */}
               <div className='w-full flex flex-row justify-end'>
                 { event.link && (
                     <Link href={event.link }

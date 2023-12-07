@@ -42,3 +42,5 @@ node_modules
 public/sw.*
 
 .env
+
+/supabase

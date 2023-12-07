@@ -129,7 +129,7 @@ const Categories = () => {
       >
         <h3 className='text-lg font-bold mb-2 ml-2'>By Categories</h3>
         <motion.div
-          className='max-w-full grid grid-cols-6 gap-1'
+          className='max-w-full grid grid-cols-4 gap-1 md:grid-cols-6 md:gap-4'
         >
           {categories.filter(category => (category.id != 'all' && (profileSettings.includes(category.id) || profileSettings.length==0))).map((category, index) => (
             <button
@@ -146,7 +146,7 @@ const Categories = () => {
       </motion.div>
 
       <motion.div
-        className="w-[37rem] p-2 m-2 bg-[url('/images/background-orange.svg')] text-white rounded-lg shadow-lg"
+        className="w-full p-2 m-2 bg-[url('/images/background-orange.svg')] text-white rounded-lg shadow-lg"
       >
         <h1>Event Calendar</h1>
         <Calendar

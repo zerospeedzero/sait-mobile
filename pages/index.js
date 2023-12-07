@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from 'next/navigation';
 import Spinner from '@/components/Spinner';
 import { parse } from 'cookie';
+import { motion } from 'framer-motion';
 
 const LoginForm = () => {
   const router = useRouter();
@@ -42,9 +43,11 @@ const LoginForm = () => {
   }, [router]);
 
   return (
-    <div>
-      <img src="/images/sait-logo.png" alt="SAIT logo" className='w-[36rem] mt-[10rem] mb-[8rem] flex flex-col justify-center items-center mx-auto' />
-      <div className="bg-[url('/images/background-blue.svg')] w-[35rem] pt-[3rem] pb-[20rem] flex flex-col justify-center items-center space-y-4 rounded-tl-[8%] rounded-tr-[8%]" >
+    <motion.div
+      className='w-full'
+    >
+      <img src="/images/sait-logo.png" alt="SAIT logo" className='w-[80%] mt-[2rem] mb-[2rem] flex flex-col justify-center items-center mx-auto' />
+      <div className="bg-[url('/images/background-blue.svg')] pt-[03rem] pb-[20rem] flex flex-col justify-center items-center space-y-4 rounded-tl-[8%] rounded-tr-[8%]" >
         <input
           className='p-3 text-xl w-full max-w-xs z-10 rounded-md'
           type="text"
@@ -54,7 +57,7 @@ const LoginForm = () => {
           onChange={(e) => setEmail(e.target.value)}
         />
         <input
-          className='p-3 text-xl w-full max-w-xs rounded-md'
+          className='p-3 w-full max-w-xs rounded-md'
           type="password"
           id="password"
           value={password}
@@ -71,7 +74,7 @@ const LoginForm = () => {
       </div>
       {loading && <Spinner/>}
       <ToastContainer className='mt-[10rem]' position="center-right" />
-    </div>
+    </motion.div>
   );
 };
 
