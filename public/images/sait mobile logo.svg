@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 351.69 179.78">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-6 {
+        filter: url(#drop-shadow-2);
+      }
+
+      .cls-7 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-3 {
+        fill: #010101;
+        isolation: isolate;
+        opacity: .3;
+      }
+
+      .cls-4 {
+        fill: #ed3726;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur" stdDeviation="16"/>
+      <feFlood flood-color="#c2c1c1" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="19.04" y="64.73" width="121.21" height="94.27" transform="translate(-1.75 1.27) rotate(-.9)"/>
+    </clipPath>
+    <filter id="drop-shadow-2" filterUnits="userSpaceOnUse">
+      <feOffset dx="7" dy="7"/>
+      <feGaussianBlur result="blur-2" stdDeviation="16"/>
+      <feFlood flood-color="#c2c1c1" flood-opacity=".75"/>
+      <feComposite in2="blur-2" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clippath-1">
+      <rect class="cls-2" x="139.23" y="86.01" width="187.83" height="70.12" transform="translate(-1.88 3.69) rotate(-.9)"/>
+    </clipPath>
+    <image id="image" width="1840" height="515" xlink:href="icons/untitled.png"/>
+  </defs>
+  <g>
+    <path class="cls-4" d="M144.95,97.78c-8.47,0-17.35-1.84-23.55-4.69l2.77-12.74c6.71,2.1,13.49,3.52,21.04,3.52,8.47,0,10.06-1.68,10.06-7.79,0-6.54-.34-7.38-12.32-9.97-17.68-3.86-20.28-7.38-20.28-23.13,0-14.58,5.11-20.37,25.23-20.37,6.37,0,14,.67,22.13,2.43l-1.68,13.83c-8.3-1.42-13.75-2.1-20.28-2.1-7.38,0-8.97,1.34-8.97,6.71,0,7.04.34,7.12,11.82,9.89,19.86,4.61,20.79,8.47,20.79,22.8s-4.69,21.62-26.74,21.62Z"/>
+    <rect class="cls-4" x="250.55" y="23.68" width="16.43" height="73"/>
+    <polygon class="cls-4" points="310.9 38.27 310.9 96.69 294.47 96.69 294.47 38.27 274.77 38.27 274.77 23.68 330.51 23.68 330.51 38.27 310.9 38.27"/>
+    <path class="cls-4" d="M242.59,96.69l-22.38-73h-21.96l-22.29,73h17.1c3.1-2.68,7.63-7.12,12.15-9.64,6.71-3.69,12.4-4.19,16.43-3.77l3.69,13.41h17.27ZM209.65,68.86c-3.18.84-6.79,2.6-10.06,4.53l9.72-35.2,8.21,29.75c-2.6-.08-5.28.25-7.88.92h0Z"/>
+    <path class="cls-3" d="M221.72,83.02l-4.19-15.17c-1.59,0-3.18.08-4.78.34l8.97,14.84Z"/>
+  </g>
+  <g class="cls-7">
+    <g class="cls-1">
+      <use transform="translate(7.63 34.6) rotate(-.9) scale(.26)" xlink:href="#image"/>
+    </g>
+  </g>
+  <g class="cls-6">
+    <g class="cls-5">
+      <use transform="translate(65.64 82.68) rotate(-.9) scale(.15)" xlink:href="#image"/>
+    </g>
+  </g>
+</svg>

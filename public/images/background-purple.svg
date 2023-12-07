@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 434.82 434.82">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9, .cls-10, .cls-11, .cls-12, .cls-13 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-4 {
+        fill: url(#linear-gradient-10);
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-4);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-7 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-8 {
+        fill: url(#linear-gradient-8);
+      }
+
+      .cls-9 {
+        fill: url(#linear-gradient-9);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-7);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-14 {
+        isolation: isolate;
+      }
+
+      .cls-13 {
+        fill: url(#linear-gradient-11);
+        mix-blend-mode: overlay;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="0" width="434.82" height="434.82"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-238.48" y1="705.7" x2="-236.09" y2="703.31" gradientTransform="translate(-21846.44 -97560.71) rotate(-180) scale(92 -139)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9516fe"/>
+      <stop offset="1" stop-color="#b259fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-249.29" y1="703.83" x2="-246.91" y2="701.44" gradientTransform="translate(-32861.85 -138955.35) rotate(-180) scale(133 -198)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#900cfe"/>
+      <stop offset="1" stop-color="#8c01fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="-253.1" y1="704.39" x2="-250.74" y2="702.03" gradientTransform="translate(-40035.51 -138955.35) rotate(-180) scale(160 -198)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a00fe"/>
+      <stop offset="1" stop-color="#9920fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="-253.4" y1="705.6" x2="-251.08" y2="703.28" gradientTransform="translate(-40035.51 -91238.28) rotate(-180) scale(160 -130)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a21fe"/>
+      <stop offset="1" stop-color="#af54fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-5" x1="-248.68" y1="705.35" x2="-246.32" y2="702.99" gradientTransform="translate(-32861.85 -61216.3) rotate(-180) scale(133 -87)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8a00fe"/>
+      <stop offset="1" stop-color="#b255fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-6" x1="-235.03" y1="705.13" x2="-232.7" y2="702.8" gradientTransform="translate(-19453.89 -61216.3) rotate(-180) scale(83 -87)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#cf96fe"/>
+      <stop offset="1" stop-color="#b866fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-7" x1="-233.37" y1="705.79" x2="-230.96" y2="703.38" gradientTransform="translate(-16269.66 -91238.28) rotate(-180) scale(72 -130)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9a23fe"/>
+      <stop offset="1" stop-color="#d4a2fe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-8" x1="-246.68" y1="705.12" x2="-244.3" y2="702.75" gradientTransform="translate(-27083.22 -60497.7) rotate(-180) scale(112 -86)" xlink:href="#linear-gradient-4"/>
+    <linearGradient id="linear-gradient-9" x1="-216.69" y1="705.35" x2="-214.29" y2="702.95" gradientTransform="translate(-10063.35 -60497.7) rotate(-180) scale(49 -86)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d19afe"/>
+      <stop offset="1" stop-color="#fcfafe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-10" x1="-241.1" y1="711.31" x2="-238.72" y2="708.92" gradientTransform="translate(-23459.48 -39299.58) rotate(-180) scale(98 -56)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#bd6ffe"/>
+      <stop offset="1" stop-color="#f5eafe"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-11" x1="3821.33" y1="-73.09" x2="4354.99" y2="-606.75" gradientTransform="translate(4297.27 -117.11) rotate(-180)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8d06fe"/>
+      <stop offset="1" stop-color="#d098fe"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-14">
+    <g id="Layer_1" data-name="Layer 1">
+      <g class="cls-1">
+        <polygon id="triangle36" class="cls-3" points="127.6 479.98 -84.56 411.15 -68.42 138.28 127.6 479.98"/>
+        <polygon id="triangle36-2" data-name="triangle36" class="cls-6" points="127.6 479.98 -68.42 138.28 238.29 -6.75 127.6 479.98"/>
+        <polygon id="triangle36-3" data-name="triangle36" class="cls-7" points="238.29 -6.75 127.6 479.98 496.57 180.08 238.29 -6.75"/>
+        <polygon id="triangle36-4" data-name="triangle36" class="cls-5" points="496.57 180.08 127.6 479.98 376.66 499.65 496.57 180.08"/>
+        <polygon id="triangle36-5" data-name="triangle36" class="cls-11" points="238.29 -6.75 -68.42 138.28 44.58 -75.58 238.29 -6.75"/>
+        <polygon id="triangle36-6" data-name="triangle36" class="cls-12" points="44.58 -75.58 -68.42 138.28 -146.83 116.16 44.58 -75.58"/>
+        <polygon id="triangle36-7" data-name="triangle36" class="cls-10" points="496.57 180.08 376.66 499.65 542.7 352.15 496.57 180.08"/>
+        <polygon id="triangle36-8" data-name="triangle36" class="cls-8" points="496.57 180.08 238.29 -6.75 429.7 -31.33 496.57 180.08"/>
+        <polygon id="triangle36-9" data-name="triangle36" class="cls-9" points="496.57 180.08 429.7 -31.33 542.7 22.75 496.57 180.08"/>
+        <polygon id="triangle36-10" data-name="triangle36" class="cls-4" points="127.6 479.98 -84.56 411.15 141.44 548.81 127.6 479.98"/>
+        <polygon class="cls-13" points="-84.56 411.15 141.44 548.81 376.66 499.65 542.7 352.15 542.7 22.75 429.7 -31.33 222.15 -82.96 44.58 -75.58 -146.83 116.16 -84.56 411.15"/>
+      </g>
+    </g>
+  </g>
+</svg>
