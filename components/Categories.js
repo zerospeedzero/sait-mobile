@@ -1,5 +1,5 @@
 import React, { use, useEffect } from 'react'
-import { motion } from 'framer-motion'
+import { motion, easeInOut } from 'framer-motion'
 import {FaUtensils, FaTshirt, FaPlug, FaCouch, FaBook} from 'react-icons/fa'
 import category from '@/pages/categories'
 import Link from 'next/link'
@@ -25,6 +25,19 @@ const Categories = () => {
     { id: 'sports', name: 'Sports', icon: 'sports.png', color: 'bg-green-500', subcategories: ["recreationVehicleServiceTechnician"] },
     { id: 'others', name: 'Others', icon: 'others.png', color: 'bg-purple-500', subcategories: ["other"] },
   ];
+  const container = {
+    hidden: { opacity: 1, scale: 0 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: {
+        ease: easeInOut,
+        duration: 0.5,
+        delayChildren: 0.2,
+        staggerChildren: 0.3
+      }
+    }
+  }
 
   const compareDates = (a, b) => {
     const dateA = new Date(a.date);
@@ -107,6 +120,9 @@ const Categories = () => {
     
   return (
     <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.2, duration: 0.5 }}
       id="top"
       className="w-full h-full min-h-screen bg-transparent p-2 flex flex-col justify-start items-center"
     >
@@ -122,21 +138,32 @@ const Categories = () => {
       >
         <h3 className='text-lg font-bold mb-2 ml-2'>By Categories</h3>
         <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          // transition={{ delay: 0.4, duration: 0.5 }}
           className='max-w-full grid grid-cols-4 gap-1 md:gap-4'
         >
           {categories.filter(category => (category.id != 'all' && (profileSettings.includes(category.id) || profileSettings.length==0))).map((category, index) => (
-            <button
+            <motion.button
+              // initial={{ x: -20  , y: -20 , opacity: 0 }}
+              // animate={{ x: 0, y:0, opacity: 1 }}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: (0.6 + index * 0.08) , duration: 0.3 }} 
               key={index}
               className={`min-w-[4rem] min-h-[4rem] p-2 m-1 flex flex-col justify-center items-center rounded-lg shadow-lg hover:scale-110 hover:bg-p1/20 duration-200`}
               onClick={() => {filler(category.id)}}
             >
               <img src={`/images/${category.icon}`}  alt={category.name}/>
               <p className='text-sm font-semibold'>{category.name}</p>
-            </button>
+            </motion.button>
           ))}  
         </motion.div>
       </motion.div>
       <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.5 }}      
         className="min-h-[60rem] w-full bg-[url('/images/background-blue.svg')] p-2 flex flex-col justify-start items-center rounded-tl-[3rem] rounded-tr-[3rem] "
       >
         <motion.div
@@ -152,8 +179,11 @@ const Categories = () => {
         >
           {filledEvents.map((event, index) => (
             <motion.div
+              initial={{ scale: 0.6 }}
+              whileInView={{ scale: 1 }}
+              transition={{ duration: 0.8 }}
               key={index}
-              className='bg-gray-700/40 text-white p-6 rounded-lg mb-4'
+              className='bg-gray-700/60 text-white p-6 rounded-xl mb-4'
             >
               <h3 className='text-lg font-semibold mb-2'>{event.title}</h3>
               <div className='flex flex-row justify-between items-start'>

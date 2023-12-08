@@ -55,6 +55,9 @@ const Profile = () => {
   return ( 
     <>
       <motion.div
+        initial={{ x: -600 }}
+        animate={{ x: 0 }}
+        transition={{ delay: 0.1, duration: 2, type: 'spring', stiffness: 120 }}
         className="w-full h-full mt-[6rem] ml-3 mr-3 bg-[url('/images/background-orange.svg')] bg-cover flex flex-col justify-start items-center rounded-tl-[3rem] rounded-tr-[3rem] text-white relative"
       >
         <button
@@ -77,7 +80,7 @@ const Profile = () => {
           >
             {selectedCategories.map((category, index) => (
               // <div className='tooltip tooltip-open tooltip-bottom' data-tip={category.subcategories}>
-                <button
+                <motion.button
                   key={index}
                   className={`${category.selected ? "bg-p1" : "bg-white"} ${category.selected ? "text-white" : "text-black"}  min-h-[7rem] p-2 m-2  flex flex-col justify-center items-center rounded-lg`}
                   onClick={() => {selected(index)}}
@@ -85,7 +88,7 @@ const Profile = () => {
                   <img src={`/images/${category.icon}`} alt="SAIT logo" className='w-[3rem]' />
                   <i className={`${category.icon} text-2xl {category.color}`}></i>
                   <p className='text-lg'>{category.name}</p>
-                </button>
+                </motion.button>
               // </div>
             ))}
           </motion.div>

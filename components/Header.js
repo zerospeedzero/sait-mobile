@@ -23,21 +23,24 @@ const Header = () => {
     <>
         {!authed ? (
           <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 2, duration: 1.5 }}
             className='w-full h-[6rem] bg-transparent flex flex-row justify-between items-center'
           >          
             <Link href='/about'>
               <motion.span
                 className='text-lg font-bold m-6 mt-12 flex flex-col justify-center items-center'
                 >
-                <motion.img src="/images/About.png" alt="SAIT logo" className='w-[4rem]' />
+                <motion.img src="/images/About.png" alt="SAIT logo" className='w-[3rem]' />
                 About
               </motion.span>
             </Link>
-            <Link href='/help'>
+            <Link href='/about'>
               <motion.span
                 className='text-lg font-bold m-6 mt-12 flex flex-col justify-center items-center'
                 >
-                <img src="/images/icon_questionMark.png" alt="SAIT logo" className='w-[4rem]' />
+                <img src="/images/icon_questionMark.png" alt="SAIT logo" className='w-[3rem]' />
                 Help
               </motion.span>
             </Link>

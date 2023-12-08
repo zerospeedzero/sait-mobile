@@ -114,6 +114,9 @@ const Categories = () => {
     
   return (
     <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.2, duration: 1.5 }}
       id="top"
       className="w-full h-full min-h-screen bg-transparent p-4 flex flex-col justify-start items-center"
     >
@@ -132,7 +135,13 @@ const Categories = () => {
           className='max-w-full grid grid-cols-4 gap-1 md:grid-cols-6 md:gap-4'
         >
           {categories.filter(category => (category.id != 'all' && (profileSettings.includes(category.id) || profileSettings.length==0))).map((category, index) => (
-            <button
+            <motion.button
+              // initial={{ x: -20 - index , y: -20 - index, opacity: 0 }}
+              // animate={{ x: 0, y:0, opacity: 1 }}
+              // transition={{ delay: (0.6 + index * 0.05) , duration: 0.5 }}
+              initial={{ scale: 0 }}
+              animate={{ scale: 1 }}
+              transition={{ delay: (0.6 + index * 0.08) , duration: 0.3 }}               
               key={index}
               className={`min-w-[4rem] min-h-[4rem] p-2 m-2 flex flex-col justify-center items-center rounded-lg shadow-lg hover:scale-110 hover:bg-p1/20 duration-200`}
               onClick={() => {filler(category.id)}}
@@ -140,12 +149,15 @@ const Categories = () => {
               {/* <i className={`${category.icon} text-6xl ${category.color}`}></i> */}
               <img src={`/images/${category.icon}`}  alt={category.name}/>
               <p className='text-xs font-semibold'>{category.name}</p>
-            </button>
+            </motion.button>
           ))}  
         </motion.div>
       </motion.div>
 
       <motion.div
+        initial={{ scale: 0 }}
+        animate={{ scale: 1 }}
+        transition={{ delay: 1.2, duration: 1 }}
         className="w-full p-2 m-2 bg-[url('/images/background-orange.svg')] text-white rounded-lg shadow-lg"
       >
         <h1>Event Calendar</h1>
