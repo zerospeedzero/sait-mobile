@@ -36,7 +36,7 @@ const Header = () => {
                 About
               </motion.span>
             </Link>
-            <Link href='/about'>
+            <Link href='/chat'>
               <motion.span
                 className='text-lg font-bold m-6 mt-12 flex flex-col justify-center items-center'
                 >

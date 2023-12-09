@@ -10,6 +10,7 @@ export default class PWADocument extends Document {
           <link rel="apple-touch-icon" href="/icon.png"></link>
           <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"></meta>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <link rel="stylesheet" href="../node_modules/@chatscope/chat-ui-kit-styles/dist/default/styles.min.css"></link>
         </Head>
         <body>
           <Main />

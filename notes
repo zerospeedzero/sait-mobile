@@ -18,3 +18,17 @@ jq '.data[].metaData.categories.all' test.dat | grep '"' | sed s/\,//g |sort | u
 
 
 https://www.youtube.com/watch?v=Tt45NrVIBn8
+
+
+
+http://localhost:3000/training.html
+
+
+http://localhost:3000/api/crawl?urls=https://www.sait.ca/events&limit=1&indexName=langchain-chatbot
+
+
+http://localhost:3000/api/crawl?urls=http://localhost:3000/training.html&limit=1&indexName=langchain-chatbot
+http://localhost:3000/api/crawl?urls=http://localhost:3000/input/main.html&limit=2&indexName=langchain-chatbot
+http://localhost:3000/api/crawl?urls=http://localhost:3000/input/output_html_files/line1.html&limit=2&indexName=langchain-chatbot
+
+http://localhost:3000/input/main.html
